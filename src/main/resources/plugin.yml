@@ -1,0 +1,4 @@
+name: PlayerVitals
+main: com.styng.playervitals.PlayerVitals
+version: 1.0
+authors: [Styng]

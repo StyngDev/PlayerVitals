@@ -1,0 +1,37 @@
+# The max amount of player configurations the plugin is allowed to keep in memory at once.
+max-config-cache-size: 150
+
+bleed:
+  # 1 = 0.5 hearts, 20 = 10 hearts
+  damge: 1
+  # The ticks between taking bleed damage. 20 ticks = 1 second
+  ticks: 20
+  # The chance of getting the bleed effect. 1.0 = 100%
+  chance: 0.5
+
+  bandage:
+    item_id: 339
+    data: 0
+    display_name: "&aBandage"
+    lore:
+    - "&7Right click to heal yourself"
+    - "&7from the bleed effect."
+
+sleep:
+  # The slowness potion effect level.
+  slow_level: 1
+
+  actions:
+    20m:
+      actions:
+      - "message"
+      message: "&fI am tired"
+    40m:
+      actions:
+      - "message"
+      message: "&eI am very tired and need to sleep."
+    60m:
+      actions:
+      - "message"
+      - "slow"
+      message: "&c&l&nI am extremely tired and need to sleep soon"
